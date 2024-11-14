@@ -374,7 +374,7 @@
   - type: CanEscapeInventory
     baseResistTime: 2
   - type: Spider
-    webAction: ADTActionSpiderWebLong
+    smallWeb: true
   - type: MultiHandedItem
   - type: Item
     sprite: ADT/Mobs/Animals/minispider.rsi
