@@ -222,7 +222,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ADTClothingHeadHatBeretСE
-  name: blueshield officer's beret
+  name: ce's beret
   description: A corporate blue beret with a blueshield officer's rank emblem.
   components:
   - type: Sprite
