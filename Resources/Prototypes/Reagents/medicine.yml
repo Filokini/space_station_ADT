@@ -815,7 +815,7 @@
           type: [ Shadekin ]
         damage:
             Brute: -4
-            Airloss: -0.5
+            Bloodloss: -0.5
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
