@@ -815,7 +815,7 @@
           type: [ Shadekin ]
         damage:
             Brute: -3.5
-      - !type:EvenHealthChange
+      - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Shadekin ]
