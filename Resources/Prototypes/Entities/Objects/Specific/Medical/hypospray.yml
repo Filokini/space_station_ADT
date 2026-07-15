@@ -554,7 +554,7 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 30
+        maxVol: 40
         reagents:
         - ReagentId: Saline
           Quantity: 20
