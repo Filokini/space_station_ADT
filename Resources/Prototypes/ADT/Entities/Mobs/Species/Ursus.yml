@@ -1,7 +1,7 @@
 ﻿# Ursus mob (upstream PR#42476). Appearance/body/sprite come from AppearanceUrsus.
 - type: entity
   parent:
-  - AppearanceUrsus
+  - ADTAppearanceUrsus
   - BaseSpeciesMobOrganic
   id: BaseMobUrsus
   name: Urist McUrsus
