@@ -17002,7 +17002,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 88.99248,-18.513046
       parent: 1
-- proto: OrganTajaranHead
+- proto: ADTOrganTajaranHead
   entities:
   - uid: 7963
     components:
@@ -17276,7 +17276,7 @@ entities:
     - type: Transform
       pos: 185.5,17.5
       parent: 1
-- proto: OrganTajaranLegLeft
+- proto: ADTOrganTajaranLegLeft
   entities:
   - uid: 7964
     components:
@@ -17765,7 +17765,7 @@ entities:
     - type: Transform
       pos: 146.15948,-13.451375
       parent: 1
-- proto: OrganTajaranFootRight
+- proto: ADTOrganTajaranFootRight
   entities:
   - uid: 7965
     components:
@@ -18143,7 +18143,7 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
-- proto: OrganTajaranTorso
+- proto: ADTOrganTajaranTorso
   entities:
   - uid: 7966
     components:
