@@ -3,7 +3,7 @@
   save: false
   name: Urisst' Mzhand Novakid
   parent:
-  - AppearanceNovakid
+  - ADTAppearanceNovakid
   - BaseSpeciesMobOrganic
   id: BaseMobNovakid
   abstract: true

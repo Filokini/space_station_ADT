@@ -9,24 +9,24 @@
   components:
   - type: InitialBody
     organs:
-      Torso: OrganDemonTorso
-      Head: OrganDemonHead
-      ArmLeft: OrganDemonArmLeft
-      ArmRight: OrganDemonArmRight
-      HandRight: OrganDemonHandRight
-      HandLeft: OrganDemonHandLeft
-      LegLeft: OrganDemonLegLeft
-      LegRight: OrganDemonLegRight
-      FootLeft: OrganDemonFootLeft
-      FootRight: OrganDemonFootRight
+      Torso: ADTOrganDemonTorso
+      Head: ADTOrganDemonHead
+      ArmLeft: ADTOrganDemonArmLeft
+      ArmRight: ADTOrganDemonArmRight
+      HandRight: ADTOrganDemonHandRight
+      HandLeft: ADTOrganDemonHandLeft
+      LegLeft: ADTOrganDemonLegLeft
+      LegRight: ADTOrganDemonLegRight
+      FootLeft: ADTOrganDemonFootLeft
+      FootRight: ADTOrganDemonFootRight
       Brain: OrganHumanBrain
       Eyes: OrganHumanEyes
       Tongue: OrganHumanTongue
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
       Lungs: OrganHumanLungs
-      Heart: ADTOrganDemonHeart
-      Stomach: ADTOrganDemonStomach
+      Heart: ADTADTOrganDemonHeart
+      Stomach: ADTADTOrganDemonStomach
       Liver: OrganAnimalLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
@@ -41,12 +41,19 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganDemon
+  id: ADTOrganDemon
   abstract: true
   suffix: demon
 
 - type: entity
-  id: OrganDemonVisual
+  id: ADTOrganDemonMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human, Demon ]
+
+- type: entity
+  id: ADTOrganDemonVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -57,20 +64,20 @@
       group: Demon
 
 - type: entity
-  parent: [ OrganDemon, OrganDemonVisual ]
-  id: OrganDemonExternal
+  parent: [ ADTOrganDemon, ADTOrganDemonVisual ]
+  id: ADTOrganDemonExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Demon/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganDemonExternal ]
-  id: OrganDemonTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganDemonExternal ]
+  id: ADTOrganDemonTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganDemonExternal ]
-  id: OrganDemonHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganDemonExternal ]
+  id: ADTOrganDemonHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -81,59 +88,42 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganDemonExternal ]
-  id: OrganDemonArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganDemonExternal ]
+  id: ADTOrganDemonArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganDemonExternal ]
-  id: OrganDemonArmRight
+  parent: [ OrganBaseArmRight, ADTOrganDemonExternal ]
+  id: ADTOrganDemonArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganDemonExternal ]
-  id: OrganDemonHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganDemonExternal ]
+  id: ADTOrganDemonHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganDemonExternal ]
-  id: OrganDemonHandRight
+  parent: [ OrganBaseHandRight, ADTOrganDemonExternal ]
+  id: ADTOrganDemonHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganDemonExternal ]
-  id: OrganDemonLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganDemonExternal ]
+  id: ADTOrganDemonLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganDemonExternal ]
-  id: OrganDemonLegRight
+  parent: [ OrganBaseLegRight, ADTOrganDemonExternal ]
+  id: ADTOrganDemonLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganDemonExternal ]
-  id: OrganDemonFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganDemonExternal ]
+  id: ADTOrganDemonFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganDemonExternal ]
-  id: OrganDemonFootRight
+  parent: [ OrganBaseFootRight, ADTOrganDemonExternal ]
+  id: ADTOrganDemonFootRight
 
 - type: entity
-  id: OrganDemonMetabolizer
-  abstract: true
-  components:
-  - type: Metabolizer
-    metabolizerTypes: [ Demon ]
-
-- type: entity
-  parent: [ OrganAnimalStomach ]
+  parent: [ OrganBaseStomach, ADTOrganDemonMetabolizer, OrganSpriteHumanInternal ]
   id: ADTOrganDemonStomach
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      stomach:
-        maxVol: 50
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganDemonMetabolizer ]
+  parent: [ OrganBaseHeart, ADTOrganDemonMetabolizer, OrganSpriteHumanInternal ]
   id: ADTOrganDemonHeart
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Metabolizer
-    maxReagents: 2
-    metabolizerTypes: [ Demon ]
+

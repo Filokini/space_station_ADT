@@ -4,7 +4,7 @@
 
 - type: entity
   parent: AppearanceReptilian
-  id: AppearanceKobolt
+  id: ADTAppearanceKobolt
   categories: [ HideSpawnMenu ]
   name: kobolt appearance
   components:

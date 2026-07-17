@@ -1,31 +1,31 @@
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceTajaran
+  id: ADTAppearanceTajaran
   categories: [ HideSpawnMenu ]
   name: tajaran appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganTajaranTorso
-      Head: OrganTajaranHead
-      ArmLeft: OrganTajaranArmLeft
-      ArmRight: OrganTajaranArmRight
-      HandRight: OrganTajaranHandRight
-      HandLeft: OrganTajaranHandLeft
-      LegLeft: OrganTajaranLegLeft
-      LegRight: OrganTajaranLegRight
-      FootLeft: OrganTajaranFootLeft
-      FootRight: OrganTajaranFootRight
-      Brain: OrganHumanBrain
-      Eyes: OrganTajaranEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganFelinidStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Torso: ADTOrganTajaranTorso
+      Head: ADTOrganTajaranHead
+      ArmLeft: ADTOrganTajaranArmLeft
+      ArmRight: ADTOrganTajaranArmRight
+      HandRight: ADTOrganTajaranHandRight
+      HandLeft: ADTOrganTajaranHandLeft
+      LegLeft: ADTOrganTajaranLegLeft
+      LegRight: ADTOrganTajaranLegRight
+      FootLeft: ADTOrganTajaranFootLeft
+      FootRight: ADTOrganTajaranFootRight
+      Brain: ADTOrganTajaranBrain
+      Eyes: ADTOrganTajaranEyes
+      Tongue: ADTOrganTajaranTongue
+      Appendix: ADTOrganTajaranAppendix
+      Ears: ADTOrganTajaranEars
+      Lungs: ADTOrganTajaranLungs
+      Heart: ADTOrganTajaranHeart
+      Stomach: ADTOrganTajaranStomach
+      Liver: ADTOrganTajaranLiver
+      Kidneys: ADTOrganTajaranKidneys
   - type: HumanoidProfile
     species: TajaranSpecies
   - type: ScaleVisuals
@@ -66,27 +66,27 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganTajaran
+  id: ADTOrganTajaran
   abstract: true
   suffix: tajaran
 
 - type: entity
-  parent: OrganTajaran
-  id: OrganTajaranInternal
+  parent: ADTOrganTajaran
+  id: ADTOrganTajaranInternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Tajaran/organs.rsi
 
 - type: entity
-  id: OrganTajaranMetabolizer
+  id: ADTOrganTajaranMetabolizer
   abstract: true
   components:
   - type: Metabolizer
     metabolizerTypes: [ Animal ]
 
 - type: entity
-  id: OrganTajaranVisual
+  id: ADTOrganTajaranVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -97,20 +97,20 @@
       group: Tajaran
 
 - type: entity
-  parent: [ OrganTajaran, OrganTajaranVisual ]
-  id: OrganTajaranExternal
+  parent: [ ADTOrganTajaran, ADTOrganTajaranVisual ]
+  id: ADTOrganTajaranExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Tajaran/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganTajaranExternal ]
-  id: OrganTajaranTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganTajaranExternal ]
-  id: OrganTajaranHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -121,76 +121,76 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganTajaranExternal ]
-  id: OrganTajaranArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganTajaranExternal ]
-  id: OrganTajaranArmRight
+  parent: [ OrganBaseArmRight, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganTajaranExternal ]
-  id: OrganTajaranHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganTajaranExternal ]
-  id: OrganTajaranHandRight
+  parent: [ OrganBaseHandRight, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganTajaranExternal ]
-  id: OrganTajaranLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganTajaranExternal ]
-  id: OrganTajaranLegRight
+  parent: [ OrganBaseLegRight, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganTajaranExternal ]
-  id: OrganTajaranFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganTajaranExternal ]
-  id: OrganTajaranFootRight
+  parent: [ OrganBaseFootRight, ADTOrganTajaranExternal ]
+  id: ADTOrganTajaranFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganTajaranInternal ]
-  id: OrganTajaranBrain
+  parent: [ OrganBaseBrain, ADTOrganTajaranInternal ]
+  id: ADTOrganTajaranBrain
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganTajaranInternal ]
-  id: OrganTajaranTongue
+  parent: [ OrganBaseTongue, ADTOrganTajaranInternal ]
+  id: ADTOrganTajaranTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganTajaranInternal ]
-  id: OrganTajaranAppendix
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, ADTOrganTajaranInternal ]
+  id: ADTOrganTajaranAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganTajaranInternal ]
-  id: OrganTajaranEars
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, ADTOrganTajaranInternal ]
+  id: ADTOrganTajaranEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganTajaranInternal, OrganTajaranMetabolizer ]
-  id: OrganTajaranLungs
+  parent: [ OrganBaseLungs, ADTOrganTajaranInternal, ADTOrganTajaranMetabolizer ]
+  id: ADTOrganTajaranLungs
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganTajaranInternal, OrganTajaranMetabolizer ]
-  id: OrganTajaranHeart
+  parent: [ OrganBaseHeart, ADTOrganTajaranInternal, ADTOrganTajaranMetabolizer ]
+  id: ADTOrganTajaranHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganTajaranInternal, OrganTajaranMetabolizer ]
-  id: OrganTajaranStomach
+  parent: [ OrganBaseStomach, ADTOrganTajaranInternal, ADTOrganTajaranMetabolizer ]
+  id: ADTOrganTajaranStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganTajaranInternal, OrganTajaranMetabolizer ]
-  id: OrganTajaranLiver
+  parent: [ OrganBaseLiver, ADTOrganTajaranInternal, ADTOrganTajaranMetabolizer ]
+  id: ADTOrganTajaranLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganTajaranInternal, OrganTajaranMetabolizer ]
-  id: OrganTajaranKidneys
+  parent: [ OrganBaseKidneys, ADTOrganTajaranInternal, ADTOrganTajaranMetabolizer ]
+  id: ADTOrganTajaranKidneys
 
 - type: entity
-  parent: [ OrganBaseEyes, OrganTajaranInternal ]
-  id: OrganTajaranEyes
+  parent: [ OrganBaseEyes, ADTOrganTajaranInternal ]
+  id: ADTOrganTajaranEyes
   suffix: tajaran
   components:
   - type: VisualOrgan

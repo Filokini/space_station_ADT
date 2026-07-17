@@ -3,7 +3,7 @@
   save: false
   name: Base felinid
   parent:
-  - AppearanceFelinid
+  - ADTAppearanceFelinid
   - BaseSpeciesMobOrganic
   id: BaseMobFelinid
   abstract: true

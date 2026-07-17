@@ -6,24 +6,24 @@
 # ADT/Entities/Mobs/Player/silicon_base.yml) gets the same InitialBody added directly.
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceIPC
+  id: ADTAppearanceIPC
   categories: [ HideSpawnMenu ]
   name: ipc appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganIPCTorso
-      Head: OrganIPCHead
-      ArmLeft: OrganIPCArmLeft
-      ArmRight: OrganIPCArmRight
-      HandRight: OrganIPCHandRight
-      HandLeft: OrganIPCHandLeft
-      LegLeft: OrganIPCLegLeft
-      LegRight: OrganIPCLegRight
-      FootLeft: OrganIPCFootLeft
-      FootRight: OrganIPCFootRight
-      Brain: OrganIPCBrain
-      Eyes: OrganIPCEyes
+      Torso: ADTOrganIPCTorso
+      Head: ADTOrganIPCHead
+      ArmLeft: ADTOrganIPCArmLeft
+      ArmRight: ADTOrganIPCArmRight
+      HandRight: ADTOrganIPCHandRight
+      HandLeft: ADTOrganIPCHandLeft
+      LegLeft: ADTOrganIPCLegLeft
+      LegRight: ADTOrganIPCLegRight
+      FootLeft: ADTOrganIPCFootLeft
+      FootRight: ADTOrganIPCFootRight
+      Brain: ADTOrganIPCBrain
+      Eyes: ADTOrganIPCEyes
   - type: HumanoidProfile
     species: IPC
   - type: Inventory
@@ -37,13 +37,13 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganIPC
+  id: ADTOrganIPC
   abstract: true
   suffix: ipc
 
 - type: entity
-  parent: OrganIPC
-  id: OrganIPCExternal
+  parent: ADTOrganIPC
+  id: ADTOrganIPCExternal
   abstract: true
   components:
   - type: Sprite
@@ -57,12 +57,12 @@
       group: Ipc
 
 - type: entity
-  parent: [ OrganBaseTorso, OrganIPCExternal ]
-  id: OrganIPCTorso
+  parent: [ OrganBaseTorso, ADTOrganIPCExternal ]
+  id: ADTOrganIPCTorso
 
 - type: entity
-  parent: [ OrganBaseHead, OrganIPCExternal ]
-  id: OrganIPCHead
+  parent: [ OrganBaseHead, ADTOrganIPCExternal ]
+  id: ADTOrganIPCHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -71,40 +71,40 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganIPCExternal ]
-  id: OrganIPCArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganIPCExternal ]
+  id: ADTOrganIPCArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganIPCExternal ]
-  id: OrganIPCArmRight
+  parent: [ OrganBaseArmRight, ADTOrganIPCExternal ]
+  id: ADTOrganIPCArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganIPCExternal ]
-  id: OrganIPCHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganIPCExternal ]
+  id: ADTOrganIPCHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganIPCExternal ]
-  id: OrganIPCHandRight
+  parent: [ OrganBaseHandRight, ADTOrganIPCExternal ]
+  id: ADTOrganIPCHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganIPCExternal ]
-  id: OrganIPCLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganIPCExternal ]
+  id: ADTOrganIPCLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganIPCExternal ]
-  id: OrganIPCLegRight
+  parent: [ OrganBaseLegRight, ADTOrganIPCExternal ]
+  id: ADTOrganIPCLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganIPCExternal ]
-  id: OrganIPCFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganIPCExternal ]
+  id: ADTOrganIPCFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganIPCExternal ]
-  id: OrganIPCFootRight
+  parent: [ OrganBaseFootRight, ADTOrganIPCExternal ]
+  id: ADTOrganIPCFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganIPC ]
-  id: OrganIPCBrain
+  parent: [ OrganBaseBrain, ADTOrganIPC ]
+  id: ADTOrganIPCBrain
   components:
   - type: Sprite
     sprite: Objects/Specific/Robotics/mmi.rsi
@@ -114,7 +114,7 @@
 
 - type: entity
   parent: [ OrganBase ]
-  id: OrganIPCEyes
+  id: ADTOrganIPCEyes
   components:
   - type: Sprite
     sprite: Objects/Misc/proximity_sensor.rsi

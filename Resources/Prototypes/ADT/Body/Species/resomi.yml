@@ -3,32 +3,32 @@
 
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceResomi
+  id: ADTAppearanceResomi
   categories: [ HideSpawnMenu ]
   name: resomi appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganResomiTorso
-      Head: OrganResomiHead
-      ArmLeft: OrganResomiArmLeft
-      ArmRight: OrganResomiArmRight
-      HandRight: OrganResomiHandRight
-      HandLeft: OrganResomiHandLeft
-      LegLeft: OrganResomiLegLeft
-      LegRight: OrganResomiLegRight
-      FootLeft: OrganResomiFootLeft
-      FootRight: OrganResomiFootRight
-      Brain: OrganResomiBrain
-      Eyes: OrganResomiEyes
-      Tongue: OrganResomiTongue
-      Appendix: OrganResomiAppendix
-      Ears: OrganResomiEars
-      Lungs: OrganResomiLungs
-      Heart: OrganResomiHeart
-      Stomach: OrganResomiStomach
-      Liver: OrganResomiLiver
-      Kidneys: OrganResomiKidneys
+      Torso: ADTOrganResomiTorso
+      Head: ADTOrganResomiHead
+      ArmLeft: ADTOrganResomiArmLeft
+      ArmRight: ADTOrganResomiArmRight
+      HandRight: ADTOrganResomiHandRight
+      HandLeft: ADTOrganResomiHandLeft
+      LegLeft: ADTOrganResomiLegLeft
+      LegRight: ADTOrganResomiLegRight
+      FootLeft: ADTOrganResomiFootLeft
+      FootRight: ADTOrganResomiFootRight
+      Brain: ADTOrganResomiBrain
+      Eyes: ADTOrganResomiEyes
+      Tongue: ADTOrganResomiTongue
+      Appendix: ADTOrganResomiAppendix
+      Ears: ADTOrganResomiEars
+      Lungs: ADTOrganResomiLungs
+      Heart: ADTOrganResomiHeart
+      Stomach: ADTOrganResomiStomach
+      Liver: ADTOrganResomiLiver
+      Kidneys: ADTOrganResomiKidneys
   - type: HumanoidProfile
     species: Resomi
   - type: Hands
@@ -109,19 +109,19 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganResomi
+  id: ADTOrganResomi
   abstract: true
   suffix: resomi
 
 - type: entity
-  id: OrganResomiMetabolizer
+  id: ADTOrganResomiMetabolizer
   abstract: true
   components:
   - type: Metabolizer
     metabolizerTypes: [ Animal ]
 
 - type: entity
-  id: OrganResomiVisual
+  id: ADTOrganResomiVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -132,27 +132,27 @@
       group: Resomi
 
 - type: entity
-  id: OrganResomiInternal
+  id: ADTOrganResomiInternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Resomi/organs.rsi
 
 - type: entity
-  parent: [ OrganResomi, OrganResomiVisual ]
-  id: OrganResomiExternal
+  parent: [ ADTOrganResomi, ADTOrganResomiVisual ]
+  id: ADTOrganResomiExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Resomi/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganResomiExternal ]
-  id: OrganResomiTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganResomiExternal ]
+  id: ADTOrganResomiTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganResomiExternal ]
-  id: OrganResomiHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganResomiExternal ]
+  id: ADTOrganResomiHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -163,76 +163,76 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganResomiExternal ]
-  id: OrganResomiArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganResomiExternal ]
+  id: ADTOrganResomiArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganResomiExternal ]
-  id: OrganResomiArmRight
+  parent: [ OrganBaseArmRight, ADTOrganResomiExternal ]
+  id: ADTOrganResomiArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganResomiExternal ]
-  id: OrganResomiHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganResomiExternal ]
+  id: ADTOrganResomiHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganResomiExternal ]
-  id: OrganResomiHandRight
+  parent: [ OrganBaseHandRight, ADTOrganResomiExternal ]
+  id: ADTOrganResomiHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganResomiExternal ]
-  id: OrganResomiLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganResomiExternal ]
+  id: ADTOrganResomiLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganResomiExternal ]
-  id: OrganResomiLegRight
+  parent: [ OrganBaseLegRight, ADTOrganResomiExternal ]
+  id: ADTOrganResomiLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganResomiExternal ]
-  id: OrganResomiFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganResomiExternal ]
+  id: ADTOrganResomiFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganResomiExternal ]
-  id: OrganResomiFootRight
+  parent: [ OrganBaseFootRight, ADTOrganResomiExternal ]
+  id: ADTOrganResomiFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganResomiInternal ]
-  id: OrganResomiBrain
+  parent: [ OrganBaseBrain, ADTOrganResomiInternal ]
+  id: ADTOrganResomiBrain
 
 - type: entity
   parent: [ OrganBaseTongue, OrganSpriteHumanInternal ]
-  id: OrganResomiTongue
+  id: ADTOrganResomiTongue
 
 - type: entity
   parent: [ OrganBaseAppendix, OrganSpriteHumanInternal ]
-  id: OrganResomiAppendix
+  id: ADTOrganResomiAppendix
 
 - type: entity
   parent: [ OrganBaseEars, OrganSpriteHumanInternal ]
-  id: OrganResomiEars
+  id: ADTOrganResomiEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganResomiInternal, OrganResomiMetabolizer ]
-  id: OrganResomiLungs
+  parent: [ OrganBaseLungs, ADTOrganResomiInternal, ADTOrganResomiMetabolizer ]
+  id: ADTOrganResomiLungs
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganResomiInternal, OrganResomiMetabolizer ]
-  id: OrganResomiHeart
+  parent: [ OrganBaseHeart, ADTOrganResomiInternal, ADTOrganResomiMetabolizer ]
+  id: ADTOrganResomiHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganResomiInternal, OrganResomiMetabolizer ]
-  id: OrganResomiStomach
+  parent: [ OrganBaseStomach, ADTOrganResomiInternal, ADTOrganResomiMetabolizer ]
+  id: ADTOrganResomiStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganResomiInternal, OrganResomiMetabolizer ]
-  id: OrganResomiLiver
+  parent: [ OrganBaseLiver, ADTOrganResomiInternal, ADTOrganResomiMetabolizer ]
+  id: ADTOrganResomiLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganResomiInternal, OrganResomiMetabolizer ]
-  id: OrganResomiKidneys
+  parent: [ OrganBaseKidneys, ADTOrganResomiInternal, ADTOrganResomiMetabolizer ]
+  id: ADTOrganResomiKidneys
 
 - type: entity
-  parent: [ OrganResomiVisual, OrganBaseEyes, OrganResomiInternal ]
-  id: OrganResomiEyes
+  parent: [ ADTOrganResomiVisual, OrganBaseEyes, ADTOrganResomiInternal ]
+  id: ADTOrganResomiEyes
   components:
   - type: VisualOrgan
     data:

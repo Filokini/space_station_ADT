@@ -3,7 +3,7 @@
   save: false
   name: Urist McRaptor
   parent:
-  - AppearanceResomi
+  - ADTAppearanceResomi
   - BaseSpeciesMobOrganic
   id: BaseMobResomi
   abstract: true

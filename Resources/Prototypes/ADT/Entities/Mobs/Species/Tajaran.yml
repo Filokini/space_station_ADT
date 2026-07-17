@@ -3,7 +3,7 @@
   save: false
   name: Tajaran McHands
   parent:
-  - AppearanceTajaran
+  - ADTAppearanceTajaran
   - BaseSpeciesMobOrganic
   id: BaseMobTajaran
   abstract: true

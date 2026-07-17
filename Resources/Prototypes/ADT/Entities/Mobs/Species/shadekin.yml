@@ -2,7 +2,7 @@
 - type: entity
   save: false
   parent:
-  - AppearanceShadekin
+  - ADTAppearanceShadekin
   - ADTBaseSpeciesMobNonBreathing
   id: BaseMobShadekin
   abstract: true

@@ -1,31 +1,31 @@
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceDrask
+  id: ADTAppearanceDrask
   categories: [ HideSpawnMenu ]
   name: drask appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganDraskTorso
-      Head: OrganDraskHead
-      ArmLeft: OrganDraskArmLeft
-      ArmRight: OrganDraskArmRight
-      HandRight: OrganDraskHandRight
-      HandLeft: OrganDraskHandLeft
-      LegLeft: OrganDraskLegLeft
-      LegRight: OrganDraskLegRight
-      FootLeft: OrganDraskFootLeft
-      FootRight: OrganDraskFootRight
-      Brain: OrganDraskBrain
-      Eyes: OrganDraskEyes
-      Tongue: OrganDraskTongue
-      Appendix: OrganDraskAppendix
-      Ears: OrganDraskEars
-      Lungs: OrganDraskLungs
-      Heart: OrganDraskHeart
-      Stomach: OrganDraskStomach
-      Liver: OrganDraskLiver
-      Kidneys: OrganDraskKidneys
+      Torso: ADTOrganDraskTorso
+      Head: ADTOrganDraskHead
+      ArmLeft: ADTOrganDraskArmLeft
+      ArmRight: ADTOrganDraskArmRight
+      HandRight: ADTOrganDraskHandRight
+      HandLeft: ADTOrganDraskHandLeft
+      LegLeft: ADTOrganDraskLegLeft
+      LegRight: ADTOrganDraskLegRight
+      FootLeft: ADTOrganDraskFootLeft
+      FootRight: ADTOrganDraskFootRight
+      Brain: ADTOrganDraskBrain
+      Eyes: ADTOrganDraskEyes
+      Tongue: ADTOrganDraskTongue
+      Appendix: ADTOrganDraskAppendix
+      Ears: ADTOrganDraskEars
+      Lungs: ADTOrganDraskLungs
+      Heart: ADTOrganDraskHeart
+      Stomach: ADTOrganDraskStomach
+      Liver: ADTOrganDraskLiver
+      Kidneys: ADTOrganDraskKidneys
   - type: HumanoidProfile
     species: DraskSpecies
   - type: ScaleVisuals
@@ -35,27 +35,27 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganDrask
+  id: ADTOrganDrask
   abstract: true
   suffix: drask
 
 - type: entity
-  id: OrganDraskMetabolizer
+  id: ADTOrganDraskMetabolizer
   abstract: true
   components:
   - type: Metabolizer
     metabolizerTypes: [ Drask ]
 
 - type: entity
-  parent: OrganDrask
-  id: OrganDraskInternal
+  parent: ADTOrganDrask
+  id: ADTOrganDraskInternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Drask/organs.rsi
 
 - type: entity
-  id: OrganDraskVisual
+  id: ADTOrganDraskVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -66,20 +66,20 @@
       group: Drask
 
 - type: entity
-  parent: [ OrganDrask, OrganDraskVisual ]
-  id: OrganDraskExternal
+  parent: [ ADTOrganDrask, ADTOrganDraskVisual ]
+  id: ADTOrganDraskExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Drask/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganDraskExternal ]
-  id: OrganDraskTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganDraskExternal ]
+  id: ADTOrganDraskTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganDraskExternal ]
-  id: OrganDraskHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganDraskExternal ]
+  id: ADTOrganDraskHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -90,77 +90,77 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganDraskExternal ]
-  id: OrganDraskArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganDraskExternal ]
+  id: ADTOrganDraskArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganDraskExternal ]
-  id: OrganDraskArmRight
+  parent: [ OrganBaseArmRight, ADTOrganDraskExternal ]
+  id: ADTOrganDraskArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganDraskExternal ]
-  id: OrganDraskHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganDraskExternal ]
+  id: ADTOrganDraskHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganDraskExternal ]
-  id: OrganDraskHandRight
+  parent: [ OrganBaseHandRight, ADTOrganDraskExternal ]
+  id: ADTOrganDraskHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganDraskExternal ]
-  id: OrganDraskLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganDraskExternal ]
+  id: ADTOrganDraskLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganDraskExternal ]
-  id: OrganDraskLegRight
+  parent: [ OrganBaseLegRight, ADTOrganDraskExternal ]
+  id: ADTOrganDraskLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganDraskExternal ]
-  id: OrganDraskFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganDraskExternal ]
+  id: ADTOrganDraskFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganDraskExternal ]
-  id: OrganDraskFootRight
+  parent: [ OrganBaseFootRight, ADTOrganDraskExternal ]
+  id: ADTOrganDraskFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganDraskInternal ]
-  id: OrganDraskBrain
+  parent: [ OrganBaseBrain, ADTOrganDraskInternal ]
+  id: ADTOrganDraskBrain
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganDraskInternal ]
-  id: OrganDraskTongue
+  parent: [ OrganBaseTongue, ADTOrganDraskInternal ]
+  id: ADTOrganDraskTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganDraskInternal ]
-  id: OrganDraskAppendix
+  parent: [ OrganBaseAppendix, ADTOrganDraskInternal ]
+  id: ADTOrganDraskAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganDraskInternal]
-  id: OrganDraskEars
+  parent: [ OrganBaseEars, ADTOrganDraskInternal]
+  id: ADTOrganDraskEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganDraskInternal, OrganDraskMetabolizer ]
-  id: OrganDraskLungs
+  parent: [ OrganBaseLungs, ADTOrganDraskInternal, ADTOrganDraskMetabolizer ]
+  id: ADTOrganDraskLungs
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganDraskInternal, OrganDraskMetabolizer ]
-  id: OrganDraskHeart
+  parent: [ OrganBaseHeart, ADTOrganDraskInternal, ADTOrganDraskMetabolizer ]
+  id: ADTOrganDraskHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganDraskInternal, OrganDraskMetabolizer ]
-  id: OrganDraskStomach
+  parent: [ OrganBaseStomach, ADTOrganDraskInternal, ADTOrganDraskMetabolizer ]
+  id: ADTOrganDraskStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganDraskInternal ]
-  id: OrganDraskLiver
+  parent: [ OrganBaseLiver, ADTOrganDraskInternal ]
+  id: ADTOrganDraskLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganDraskInternal ]
-  id: OrganDraskKidneys
+  parent: [ OrganBaseKidneys, ADTOrganDraskInternal ]
+  id: ADTOrganDraskKidneys
 
 # Drask have glowing (unshaded) eyes drawn from the dedicated "eyes" state in parts.rsi.
 - type: entity
-  parent: [ OrganDraskVisual, OrganBaseEyes, OrganDraskInternal ]
-  id: OrganDraskEyes
+  parent: [ ADTOrganDraskVisual, OrganBaseEyes, ADTOrganDraskInternal ]
+  id: ADTOrganDraskEyes
   suffix: drask
   components:
   - type: VisualOrgan

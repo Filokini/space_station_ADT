@@ -1,31 +1,31 @@
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceShadekin
+  id: ADTAppearanceShadekin
   categories: [ HideSpawnMenu ]
   name: shadekin appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganShadekinTorso
-      Head: OrganShadekinHead
-      ArmLeft: OrganShadekinArmLeft
-      ArmRight: OrganShadekinArmRight
-      HandRight: OrganShadekinHandRight
-      HandLeft: OrganShadekinHandLeft
-      LegLeft: OrganShadekinLegLeft
-      LegRight: OrganShadekinLegRight
-      FootLeft: OrganShadekinFootLeft
-      FootRight: OrganShadekinFootRight
-      Brain: OrganShadekinBrain
-      Eyes: OrganShadekinEyes
-      Tongue: OrganShadekinTongue
-      Appendix: OrganShadekinAppendix
-      Ears: OrganShadekinEars
-      Lungs: OrganShadekinLungs
-      Heart: OrganShadekinHeart
-      Stomach: OrganShadekinStomach
-      Liver: OrganShadekinLiver
-      Kidneys: OrganShadekinKidneys
+      Torso: ADTOrganShadekinTorso
+      Head: ADTOrganShadekinHead
+      ArmLeft: ADTOrganShadekinArmLeft
+      ArmRight: ADTOrganShadekinArmRight
+      HandRight: ADTOrganShadekinHandRight
+      HandLeft: ADTOrganShadekinHandLeft
+      LegLeft: ADTOrganShadekinLegLeft
+      LegRight: ADTOrganShadekinLegRight
+      FootLeft: ADTOrganShadekinFootLeft
+      FootRight: ADTOrganShadekinFootRight
+      Brain: ADTOrganShadekinBrain
+      Eyes: ADTOrganShadekinEyes
+      Tongue: ADTOrganShadekinTongue
+      Appendix: ADTOrganShadekinAppendix
+      Ears: ADTOrganShadekinEars
+      Lungs: ADTOrganShadekinLungs
+      Heart: ADTOrganShadekinHeart
+      Stomach: ADTOrganShadekinStomach
+      Liver: ADTOrganShadekinLiver
+      Kidneys: ADTOrganShadekinKidneys
   - type: HumanoidProfile
     species: Shadekin
   - type: ScaleVisuals
@@ -116,27 +116,27 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganShadekin
+  id: ADTOrganShadekin
   abstract: true
   suffix: shadekin
 
 - type: entity
-  id: OrganShadekinMetabolizer
+  id: ADTOrganShadekinMetabolizer
   abstract: true
   components:
   - type: Metabolizer
     metabolizerTypes: [ Shadekin ]
 
 - type: entity
-  parent: OrganShadekin
-  id: OrganShadekinInternal
+  parent: ADTOrganShadekin
+  id: ADTOrganShadekinInternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Shadekin/organs.rsi
 
 - type: entity
-  id: OrganShadekinVisual
+  id: ADTOrganShadekinVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -147,20 +147,20 @@
       group: Shadekin
 
 - type: entity
-  parent: [ OrganShadekin, OrganShadekinVisual ]
-  id: OrganShadekinExternal
+  parent: [ ADTOrganShadekin, ADTOrganShadekinVisual ]
+  id: ADTOrganShadekinExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Shadekin/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganShadekinExternal ]
-  id: OrganShadekinTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganShadekinExternal ]
-  id: OrganShadekinHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -171,56 +171,56 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganShadekinExternal ]
-  id: OrganShadekinArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganShadekinExternal ]
-  id: OrganShadekinArmRight
+  parent: [ OrganBaseArmRight, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganShadekinExternal ]
-  id: OrganShadekinHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganShadekinExternal ]
-  id: OrganShadekinHandRight
+  parent: [ OrganBaseHandRight, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganShadekinExternal ]
-  id: OrganShadekinLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganShadekinExternal ]
-  id: OrganShadekinLegRight
+  parent: [ OrganBaseLegRight, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganShadekinExternal ]
-  id: OrganShadekinFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganShadekinExternal ]
-  id: OrganShadekinFootRight
+  parent: [ OrganBaseFootRight, ADTOrganShadekinExternal ]
+  id: ADTOrganShadekinFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganShadekinInternal ]
-  id: OrganShadekinBrain
+  parent: [ OrganBaseBrain, ADTOrganShadekinInternal ]
+  id: ADTOrganShadekinBrain
 
 - type: entity
   parent: [ OrganBaseTongue, OrganSpriteHumanInternal ]
-  id: OrganShadekinTongue
+  id: ADTOrganShadekinTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganShadekinInternal ]
-  id: OrganShadekinAppendix
+  parent: [ OrganBaseAppendix, ADTOrganShadekinInternal ]
+  id: ADTOrganShadekinAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganShadekinInternal ]
-  id: OrganShadekinEars
+  parent: [ OrganBaseEars, ADTOrganShadekinInternal ]
+  id: ADTOrganShadekinEars
 
 - type: entity
-  parent: [ OrganBaseLungs, OrganShadekinInternal, ]
-  id: OrganShadekinLungs
+  parent: [ OrganBaseLungs, ADTOrganShadekinInternal, ]
+  id: ADTOrganShadekinLungs
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Shadekin/organs.rsi
@@ -228,24 +228,24 @@
     - state: lung
 
 - type: entity
-  parent: [ OrganBaseHeart, OrganShadekinInternal, OrganShadekinMetabolizer ]
-  id: OrganShadekinHeart
+  parent: [ OrganBaseHeart, ADTOrganShadekinInternal, ADTOrganShadekinMetabolizer ]
+  id: ADTOrganShadekinHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganShadekinInternal, OrganShadekinMetabolizer ]
-  id: OrganShadekinStomach
+  parent: [ OrganBaseStomach, ADTOrganShadekinInternal, ADTOrganShadekinMetabolizer ]
+  id: ADTOrganShadekinStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganShadekinInternal ]
-  id: OrganShadekinLiver
+  parent: [ OrganBaseLiver, ADTOrganShadekinInternal, ADTOrganShadekinMetabolizer ]
+  id: ADTOrganShadekinLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganShadekinInternal ]
-  id: OrganShadekinKidneys
+  parent: [ OrganBaseKidneys, ADTOrganShadekinInternal, ADTOrganShadekinMetabolizer ]
+  id: ADTOrganShadekinKidneys
 
 - type: entity
-  parent: [ OrganShadekinVisual, OrganBaseEyes, OrganShadekinInternal ]
-  id: OrganShadekinEyes
+  parent: [ ADTOrganShadekinVisual, OrganBaseEyes, ADTOrganShadekinInternal ]
+  id: ADTOrganShadekinEyes
   suffix: shadekin
   components:
   - type: VisualOrgan

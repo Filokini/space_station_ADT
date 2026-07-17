@@ -1,6 +1,6 @@
 - type: entity
   id: BaseMobIPC
-  parent: [ PlayerSiliconHumanoidBase, AppearanceIPC ]
+  parent: [ PlayerSiliconHumanoidBase, ADTAppearanceIPC ]
   name: Урист МакПозитроник
   abstract: true
   components:

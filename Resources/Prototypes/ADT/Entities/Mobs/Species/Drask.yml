@@ -1,7 +1,7 @@
 ﻿# Drask mob (upstream PR#42476). Appearance/body/sprite come from AppearanceDrask.
 - type: entity
   parent:
-  - AppearanceDrask
+  - ADTAppearanceDrask
   - BaseSpeciesMobOrganic
   id: BaseMobDrask
   name: Urist McDrask

@@ -1,4 +1,4 @@
-ent-AppearanceIPC = внешность КПБ
+ent-ADTAppearanceIPC = внешность КПБ
     .desc = { ent-BaseSpeciesAppearance.desc }
 ent-OrganIPC = { ent-OrganBase }
     .desc = { ent-OrganBase.desc }

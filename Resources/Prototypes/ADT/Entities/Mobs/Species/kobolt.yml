@@ -5,7 +5,7 @@
   name: Urisst' Mzhand
   parent:
   - MobReptilian
-  - AppearanceKobolt
+  - ADTAppearanceKobolt
   id: BaseMobKobolt
   abstract: true
   components:

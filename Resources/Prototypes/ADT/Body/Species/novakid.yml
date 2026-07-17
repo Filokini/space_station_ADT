@@ -3,27 +3,27 @@
 
 - type: entity
   parent: BaseSpeciesAppearance
-  id: AppearanceNovakid
+  id: ADTAppearanceNovakid
   categories: [ HideSpawnMenu ]
   name: novakid appearance
   components:
   - type: InitialBody
     organs:
-      Torso: OrganNovakidTorso
-      Head: OrganNovakidHead
-      ArmLeft: OrganNovakidArmLeft
-      ArmRight: OrganNovakidArmRight
-      HandRight: OrganNovakidHandRight
-      HandLeft: OrganNovakidHandLeft
-      LegLeft: OrganNovakidLegLeft
-      LegRight: OrganNovakidLegRight
-      FootLeft: OrganNovakidFootLeft
-      FootRight: OrganNovakidFootRight
+      Torso: ADTOrganNovakidTorso
+      Head: ADTOrganNovakidHead
+      ArmLeft: ADTOrganNovakidArmLeft
+      ArmRight: ADTOrganNovakidArmRight
+      HandRight: ADTOrganNovakidHandRight
+      HandLeft: ADTOrganNovakidHandLeft
+      LegLeft: ADTOrganNovakidLegLeft
+      LegRight: ADTOrganNovakidLegRight
+      FootLeft: ADTOrganNovakidFootLeft
+      FootRight: ADTOrganNovakidFootRight
       Brain: OrganHumanBrain
       Tongue: OrganHumanTongue
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
-      Lungs: OrganNovakidLungs
+      Lungs: ADTOrganNovakidLungs
       Heart: OrganHumanHeart
       Stomach: OrganHumanStomach
       Liver: OrganHumanLiver
@@ -40,12 +40,19 @@
 
 - type: entity
   parent: OrganBaseOrganic
-  id: OrganNovakid
+  id: ADTOrganNovakid
   abstract: true
   suffix: novakid
 
 - type: entity
-  id: OrganNovakidVisual
+  id: ADTOrganNovakidMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Novakid ]
+
+- type: entity
+  id: ADTOrganNovakidVisual
   abstract: true
   components:
   - type: VisualOrgan
@@ -56,20 +63,20 @@
       group: Novakid
 
 - type: entity
-  parent: [ OrganNovakid, OrganNovakidVisual ]
-  id: OrganNovakidExternal
+  parent: [ ADTOrganNovakid, ADTOrganNovakidVisual ]
+  id: ADTOrganNovakidExternal
   abstract: true
   components:
   - type: Sprite
     sprite: ADT/Mobs/Species/Novakid/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganNovakidExternal ]
-  id: OrganNovakidTorso
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidTorso
 
 - type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganNovakidExternal ]
-  id: OrganNovakidHead
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidHead
   components:
   - type: VisualOrganMarkings
     hideableLayers:
@@ -80,44 +87,37 @@
     - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
-  parent: [ OrganBaseArmLeft, OrganNovakidExternal ]
-  id: OrganNovakidArmLeft
+  parent: [ OrganBaseArmLeft, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidArmLeft
 
 - type: entity
-  parent: [ OrganBaseArmRight, OrganNovakidExternal ]
-  id: OrganNovakidArmRight
+  parent: [ OrganBaseArmRight, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidArmRight
 
 - type: entity
-  parent: [ OrganBaseHandLeft, OrganNovakidExternal ]
-  id: OrganNovakidHandLeft
+  parent: [ OrganBaseHandLeft, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidHandLeft
 
 - type: entity
-  parent: [ OrganBaseHandRight, OrganNovakidExternal ]
-  id: OrganNovakidHandRight
+  parent: [ OrganBaseHandRight, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidHandRight
 
 - type: entity
-  parent: [ OrganBaseLegLeft, OrganNovakidExternal ]
-  id: OrganNovakidLegLeft
+  parent: [ OrganBaseLegLeft, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidLegLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganNovakidExternal ]
-  id: OrganNovakidLegRight
+  parent: [ OrganBaseLegRight, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidLegRight
 
 - type: entity
-  parent: [ OrganBaseFootLeft, OrganNovakidExternal ]
-  id: OrganNovakidFootLeft
+  parent: [ OrganBaseFootLeft, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidFootLeft
 
 - type: entity
-  parent: [ OrganBaseFootRight, OrganNovakidExternal ]
-  id: OrganNovakidFootRight
+  parent: [ OrganBaseFootRight, ADTOrganNovakidExternal ]
+  id: ADTOrganNovakidFootRight
 
 - type: entity
-  id: OrganNovakidMetabolizer
-  abstract: true
-  components:
-  - type: Metabolizer
-    metabolizerTypes: [ Novakid ]
-
-- type: entity
-  id: OrganNovakidLungs
-  parent: [ OrganBaseLungs, OrganSpriteHumanInternal, OrganNovakidMetabolizer ]
+  id: ADTOrganNovakidLungs
+  parent: [ OrganBaseLungs, OrganSpriteHumanInternal, ADTOrganNovakidMetabolizer ]
