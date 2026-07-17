@@ -307,7 +307,7 @@
   id: OrganReptilianFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganReptilianInternal ]
+  parent: [ OrganBaseBrain, OrganReptilianInternal ] # ADT-tweak removed OrganSpriteHumanInternal
   id: OrganReptilianBrain
 
 - type: entity
@@ -353,9 +353,9 @@
       - Paper
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganReptilianInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseLiver, OrganReptilianInternal, OrganReptilianMetabolizer ] # ADT-tweak removed OrganSpriteHumanInternal
   id: OrganReptilianLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganReptilianInternal, OrganReptilianMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganReptilianInternal, OrganReptilianMetabolizer ] # ADT-tweak removed OrganSpriteHumanInternal
   id: OrganReptilianKidneys
