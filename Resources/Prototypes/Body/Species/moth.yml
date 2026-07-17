@@ -316,7 +316,7 @@
   id: OrganMothEars
 
 - type: entity
-  parent: [OrganBaseLungs, OrganMothMetabolizer] # ADT-tweak removed OrganSpriteHumanInternal
+  parent: [OrganBaseLungs, OrganMothInternal, OrganMothMetabolizer] # ADT-tweak removed OrganSpriteHumanInternal, add OrganMothMetabolizer
   id: OrganMothLungs
 
 - type: entity
