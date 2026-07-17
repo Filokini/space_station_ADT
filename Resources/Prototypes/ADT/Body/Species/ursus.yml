@@ -19,16 +19,16 @@
       LegRight: OrganUrsusLegRight
       FootLeft: OrganUrsusFootLeft
       FootRight: OrganUrsusFootRight
-      Brain: OrganHumanBrain
-      Eyes: OrganHumanEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Brain: OrganUrsusBrain
+      Eyes: OrganUrsusEyes
+      Tongue: OrganUrsusTongue
+      Appendix: OrganUrsusAppendix
+      Ears: OrganUrsusEars
+      Lungs: OrganUrsusLungs
+      Heart: OrganUrsusHeart
+      Stomach: OrganUrsusStomach
+      Liver: OrganUrsusLiver
+      Kidneys: OrganUrsusKidneys
   - type: HumanoidProfile
     species: UrsusSpecies
   - type: ScaleVisuals
@@ -47,6 +47,21 @@
   id: OrganUrsus
   abstract: true
   suffix: ursus
+
+- type: entity
+  parent: OrganUrsus
+  id: OrganUrsusInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Species/Ursus/organs.rsi
+
+- type: entity
+  id: OrganUrsusMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
 
 - type: entity
   id: OrganUrsusVisual
@@ -113,3 +128,43 @@
 - type: entity
   parent: [ OrganBaseFootRight, OrganUrsusExternal ]
   id: OrganUrsusFootRight
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganUrsusInternal ]
+  id: OrganUrsusBrain
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganSpriteHumanInternal, OrganUrsusInternal ]
+  id: OrganUrsusTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganUrsusInternal ]
+  id: OrganUrsusAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganUrsusInternal ]
+  id: OrganUrsusEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganUrsusInternal, OrganUrsusMetabolizer ]
+  id: OrganUrsusLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganUrsusInternal, OrganUrsusMetabolizer ]
+  id: OrganUrsusHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganUrsusInternal, OrganAnimalMetabolizer ]
+  id: OrganUrsusStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganUrsusInternal, OrganAnimalMetabolizer ]
+  id: OrganUrsusLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganUrsusInternal, OrganAnimalMetabolizer ]
+  id: OrganUrsusKidneys
+
+- type: entity
+  parent: [ OrganHumanEyes, OrganUrsusInternal ]
+  id: OrganUrsusEyes

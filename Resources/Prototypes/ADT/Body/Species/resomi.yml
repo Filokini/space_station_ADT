@@ -19,16 +19,16 @@
       LegRight: OrganResomiLegRight
       FootLeft: OrganResomiFootLeft
       FootRight: OrganResomiFootRight
-      Brain: OrganHumanBrain
+      Brain: OrganResomiBrain
       Eyes: OrganResomiEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Tongue: OrganResomiTongue
+      Appendix: OrganResomiAppendix
+      Ears: OrganResomiEars
+      Lungs: OrganResomiLungs
+      Heart: OrganResomiHeart
+      Stomach: OrganResomiStomach
+      Liver: OrganResomiLiver
+      Kidneys: OrganResomiKidneys
   - type: HumanoidProfile
     species: Resomi
   - type: Hands
@@ -114,6 +114,13 @@
   suffix: resomi
 
 - type: entity
+  id: OrganResomiMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
   id: OrganResomiVisual
   abstract: true
   components:
@@ -125,13 +132,11 @@
       group: Resomi
 
 - type: entity
-  parent: [ OrganResomiVisual, OrganBaseEyes, OrganHumanInternal ]
-  id: OrganResomiEyes
+  id: OrganResomiInternal
+  abstract: true
   components:
-  - type: VisualOrgan
-    data:
-      sprite: ADT/Mobs/Customization/Resomi/eyes.rsi
-      state: resomi
+  - type: Sprite
+    sprite: ADT/Mobs/Species/Resomi/organs.rsi
 
 - type: entity
   parent: [ OrganResomi, OrganResomiVisual ]
@@ -188,3 +193,48 @@
 - type: entity
   parent: [ OrganBaseFootRight, OrganResomiExternal ]
   id: OrganResomiFootRight
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganResomiInternal ]
+  id: OrganResomiBrain
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganSpriteHumanInternal ]
+  id: OrganResomiTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal ]
+  id: OrganResomiAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal ]
+  id: OrganResomiEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganResomiInternal, OrganResomiMetabolizer ]
+  id: OrganResomiKidneys
+
+- type: entity
+  parent: [ OrganResomiVisual, OrganBaseEyes, OrganResomiInternal ]
+  id: OrganResomiEyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: ADT/Mobs/Customization/Resomi/eyes.rsi
+      state: resomi

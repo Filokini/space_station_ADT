@@ -230,7 +230,7 @@
   abstract: true
   components:
     - type: Sprite
-      sprite: Mobs/Species/Human/organs.rsi
+      sprite: ADT/Mobs/Species/Moth/organs.rsi # adt tweak Human > Moth and ADT
 
 - type: entity
   id: OrganMothVisual

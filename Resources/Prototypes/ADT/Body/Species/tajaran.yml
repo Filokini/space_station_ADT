@@ -71,6 +71,21 @@
   suffix: tajaran
 
 - type: entity
+  parent: OrganTajaran
+  id: OrganTajaranInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Species/Tajaran/organs.rsi
+
+- type: entity
+  id: OrganTajaranMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal ]
+
+- type: entity
   id: OrganTajaranVisual
   abstract: true
   components:
@@ -138,7 +153,43 @@
   id: OrganTajaranFootRight
 
 - type: entity
-  parent: OrganHumanEyes
+  parent: [ OrganBaseBrain, OrganTajaranInternal ]
+  id: OrganTajaranBrain
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganTajaranInternal ]
+  id: OrganTajaranTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganTajaranInternal ]
+  id: OrganTajaranAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganTajaranInternal ]
+  id: OrganTajaranEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganTajaranInternal, OrganTajaranMetabolizer ]
+  id: OrganTajaranLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganTajaranInternal, OrganTajaranMetabolizer ]
+  id: OrganTajaranHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganTajaranInternal, OrganTajaranMetabolizer ]
+  id: OrganTajaranStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganTajaranInternal, OrganTajaranMetabolizer ]
+  id: OrganTajaranLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganTajaranInternal, OrganTajaranMetabolizer ]
+  id: OrganTajaranKidneys
+
+- type: entity
+  parent: [ OrganBaseEyes, OrganTajaranInternal ]
   id: OrganTajaranEyes
   suffix: tajaran
   components:

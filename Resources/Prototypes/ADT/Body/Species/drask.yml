@@ -16,16 +16,16 @@
       LegRight: OrganDraskLegRight
       FootLeft: OrganDraskFootLeft
       FootRight: OrganDraskFootRight
-      Brain: OrganHumanBrain
+      Brain: OrganDraskBrain
       Eyes: OrganDraskEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Tongue: OrganDraskTongue
+      Appendix: OrganDraskAppendix
+      Ears: OrganDraskEars
+      Lungs: OrganDraskLungs
+      Heart: OrganDraskHeart
+      Stomach: OrganDraskStomach
+      Liver: OrganDraskLiver
+      Kidneys: OrganDraskKidneys
   - type: HumanoidProfile
     species: DraskSpecies
   - type: ScaleVisuals
@@ -38,6 +38,21 @@
   id: OrganDrask
   abstract: true
   suffix: drask
+
+- type: entity
+  id: OrganDraskMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Drask ]
+
+- type: entity
+  parent: OrganDrask
+  id: OrganDraskInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: ADT/Mobs/Species/Drask/organs.rsi
 
 - type: entity
   id: OrganDraskVisual
@@ -106,9 +121,45 @@
   parent: [ OrganBaseFootRight, OrganDraskExternal ]
   id: OrganDraskFootRight
 
+- type: entity
+  parent: [ OrganBaseBrain, OrganDraskInternal ]
+  id: OrganDraskBrain
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganDraskInternal ]
+  id: OrganDraskTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganDraskInternal ]
+  id: OrganDraskAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganDraskInternal]
+  id: OrganDraskEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganDraskInternal, OrganDraskMetabolizer ]
+  id: OrganDraskLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganDraskInternal, OrganDraskMetabolizer ]
+  id: OrganDraskHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganDraskInternal, OrganDraskMetabolizer ]
+  id: OrganDraskStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganDraskInternal ]
+  id: OrganDraskLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganDraskInternal ]
+  id: OrganDraskKidneys
+
 # Drask have glowing (unshaded) eyes drawn from the dedicated "eyes" state in parts.rsi.
 - type: entity
-  parent: OrganHumanEyes
+  parent: [ OrganDraskVisual, OrganBaseEyes, OrganDraskInternal ]
   id: OrganDraskEyes
   suffix: drask
   components:
@@ -117,3 +168,9 @@
       sprite: ADT/Mobs/Species/Drask/parts.rsi
       state: eyes
       shader: unshaded
+  - type: Sprite
+    sprite: ADT/Mobs/Species/Drask/organs.rsi
+    layers:
+    - state: eyeball-l
+    - state: eyeball-r
+    - state: eyeball-c

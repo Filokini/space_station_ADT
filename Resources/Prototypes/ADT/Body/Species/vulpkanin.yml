@@ -20,16 +20,16 @@
       LegRight: OrganVulpkaninADTLegRight
       FootLeft: OrganVulpkaninADTFootLeft
       FootRight: OrganVulpkaninADTFootRight
-      Brain: OrganHumanBrain
-      Eyes: OrganHumanEyes
-      Tongue: OrganHumanTongue
-      Appendix: OrganHumanAppendix
-      Ears: OrganHumanEars
-      Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
-      Stomach: OrganHumanStomach
-      Liver: OrganHumanLiver
-      Kidneys: OrganHumanKidneys
+      Brain: OrganVulpkaninBrain
+      Eyes: OrganVulpkaninEyes
+      Tongue: OrganVulpkaninTongue
+      Appendix: OrganVulpkaninAppendix
+      Ears: OrganVulpkaninEars
+      Lungs: OrganVulpkaninLungs
+      Heart: OrganVulpkaninHeart
+      Stomach: OrganVulpkaninStomach
+      Liver: OrganVulpkaninLiver
+      Kidneys: OrganVulpkaninKidneys
   - type: HumanoidProfile
     species: VulpkaninSpecies
   - type: Inventory

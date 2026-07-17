@@ -58,7 +58,7 @@
   name: reptilian appearance
   components:
   - type: Inventory
-    speciesId: reptilian
+#    speciesId: reptilian Remove bad sprites from ADT and back ours ADT tweak
     femaleDisplacements:
       jumpsuit:
         sizeMaps:
@@ -239,7 +239,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Mobs/Species/Human/organs.rsi
+    sprite: ADT/Mobs/Species/Reptilian/organs.rsi # ADT tweak path to adt sprites
 
 - type: entity
   parent: OrganReptilian
