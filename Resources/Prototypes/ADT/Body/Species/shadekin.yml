@@ -219,7 +219,7 @@
   id: ADTOrganShadekinEars
 
 - type: entity
-  parent: [ OrganBaseLungs, ADTOrganShadekinInternal, ]
+  parent: [ OrganBaseLungs, ADTOrganShadekinInternal, ADTOrganShadekinMetabolizer  ]
   id: ADTOrganShadekinLungs
   components:
   - type: Sprite
@@ -244,7 +244,7 @@
   id: ADTOrganShadekinKidneys
 
 - type: entity
-  parent: [ ADTOrganShadekinVisual, OrganBaseEyes, ADTOrganShadekinInternal ]
+  parent: [ OrganBaseEyes, ADTOrganShadekinVisual, ADTOrganShadekinInternal ]
   id: ADTOrganShadekinEyes
   suffix: shadekin
   components:
