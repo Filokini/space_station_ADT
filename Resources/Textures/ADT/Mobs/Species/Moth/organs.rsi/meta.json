@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by discord:prazat911",
+  "copyright": "Made by discord:prazat911, appendix and ears sprites made by discord:yasha2708",
   "size": {
     "x": 32,
     "y": 32
@@ -108,6 +108,12 @@
         },
         {
             "name": "muscle"
+        },
+        {
+            "name": "appendix"
+        },
+        {
+            "name": "ears"
         }
     ]
 }

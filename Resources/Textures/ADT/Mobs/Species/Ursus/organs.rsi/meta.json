@@ -105,6 +105,12 @@
         },
         {
             "name": "muscle"
+        },
+        {
+            "name": "tongue"
+        },
+        {
+            "name": "ears"
         }
     ]
 }

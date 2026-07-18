@@ -102,6 +102,15 @@
         {
             "name": "stomach-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "tongue"
+        },
+        {
+            "name": "appendix"
+        },
+        {
+            "name": "ears"
         }
     ]
 }

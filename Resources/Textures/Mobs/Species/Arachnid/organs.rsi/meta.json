@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by PixelTheKermit (github) for SS14, inhands by mubururu_ (github), lungs inhands/kidneys, liver, brain sprites made by discord:prazat911",
+  "copyright": "Made by PixelTheKermit (github) for SS14, inhands by mubururu_ (github), lungs inhands/kidneys, liver, brain sprites made by discord:prazat911, appendix and ears sprites made by discord:yasha2708",
   "size": {
     "x": 32,
     "y": 32
@@ -112,6 +112,12 @@
     },
     {
         "name": "web-gland"
+    },
+    {
+        "name": "appendix"
+    },
+    {
+        "name": "ears"
     }
   ]
 }

@@ -387,11 +387,11 @@
   id: OrganVoxTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganVoxInternal ]
+  parent: [ OrganBaseAppendix, OrganVoxInternal ] # ADT-Tweak: remove OrganSpriteHumanInternal
   id: OrganVoxAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganVoxInternal ]
+  parent: [ OrganBaseEars, OrganVoxInternal ] # ADT-Tweak: remove OrganSpriteHumanInternal
   id: OrganVoxEars
 
 - type: entity

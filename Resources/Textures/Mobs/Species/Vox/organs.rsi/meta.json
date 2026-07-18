@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Originally from Paradise station, updated and edited for SS14 by MissKay1994 (github), all except lungs-inhands modified by discord:prazat911",
+    "copyright": "Originally from Paradise station, updated and edited for SS14 by MissKay1994 (github), all except lungs-inhands modified by discord:prazat911, appendix and ears sprites made by discord:yasha2708",
     "size": {
         "x": 32,
         "y": 32
@@ -102,6 +102,12 @@
         },
         {
             "name": "tongue"
+        },
+        {
+            "name": "appendix"
+        },
+        {
+            "name": "ears"
         }
     ]
 }

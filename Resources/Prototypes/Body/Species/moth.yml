@@ -308,11 +308,11 @@
   id: OrganMothTongue
 
 - type: entity
-  parent: [OrganBaseAppendix, OrganSpriteHumanInternal, OrganMothInternal]
+  parent: [OrganBaseAppendix, OrganMothInternal] # ADT-Tweak: remove OrganSpriteHumanInternal
   id: OrganMothAppendix
 
 - type: entity
-  parent: [OrganBaseEars, OrganSpriteHumanInternal, OrganMothInternal]
+  parent: [OrganBaseEars, OrganMothInternal] # ADT-Tweak: remove OrganSpriteHumanInternal
   id: OrganMothEars
 
 - type: entity
