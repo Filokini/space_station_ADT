@@ -25,8 +25,8 @@
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
       Lungs: OrganHumanLungs
-      Heart: ADTADTOrganDemonHeart
-      Stomach: ADTADTOrganDemonStomach
+      Heart: ADTOrganDemonHeart
+      Stomach: ADTOrganDemonStomach
       Liver: OrganAnimalLiver
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
