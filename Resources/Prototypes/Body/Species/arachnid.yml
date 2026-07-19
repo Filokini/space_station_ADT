@@ -235,7 +235,7 @@
   id: OrganArachnidFootRight
 
 - type: entity
-  parent: [ OrganBaseBrain, OrganArachnidInternal ] # ADT-Tweak: remove organHumanInternal
+  parent: [ OrganBaseBrain, OrganArachnidInternal ] # ADT-Tweak: remove OrganSpriteHumanInternal
   id: OrganArachnidBrain
 
 - type: entity
