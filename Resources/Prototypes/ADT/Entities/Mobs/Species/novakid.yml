@@ -5,8 +5,7 @@
   parent:
   - ADTAppearanceNovakid
   - BaseSpeciesMobOrganic
-  id: BaseMobNovakid
-  abstract: true
+  id: MobNovakid
   components:
   - type: Hunger
     baseDecayRate: 0.025

@@ -3,10 +3,9 @@
   save: false
   name: Urisst' Mzhand Demon
   parent:
-  - AppearanceDemon
+  - ADTAppearanceDemon
   - BaseSpeciesMobOrganic
   id: BaseMobDemon
-  abstract: true
   components:
   - type: Wagging
   - type: Speech

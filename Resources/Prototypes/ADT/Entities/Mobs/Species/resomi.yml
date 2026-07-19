@@ -5,8 +5,7 @@
   parent:
   - ADTAppearanceResomi
   - BaseSpeciesMobOrganic
-  id: BaseMobResomi
-  abstract: true
+  id: MobResomi
   components:
   - type: Tag
     tags:
