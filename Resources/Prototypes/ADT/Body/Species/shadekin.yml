@@ -336,7 +336,7 @@
   id: ADTOrganShadekinBrain
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganSpriteHumanInternal ]
+  parent: [ OrganBaseTongue, ADTOrganShadekinInternal ]
   id: ADTOrganShadekinTongue
 
 - type: entity

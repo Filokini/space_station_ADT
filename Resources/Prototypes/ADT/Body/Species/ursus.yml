@@ -253,7 +253,7 @@
   id: ADTOrganUrsusBrain
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganSpriteHumanInternal, ADTOrganUrsusInternal ]
+  parent: [ OrganBaseTongue, ADTOrganResomiInternal, ADTOrganUrsusInternal ]
   id: ADTOrganUrsusTongue
 
 - type: entity

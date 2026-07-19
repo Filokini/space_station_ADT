@@ -327,15 +327,15 @@
   id: ADTOrganResomiBrain
 
 - type: entity
-  parent: [ OrganBaseTongue, OrganSpriteHumanInternal ]
+  parent: [ OrganBaseTongue, ADTOrganResomiInternal ]
   id: ADTOrganResomiTongue
 
 - type: entity
-  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal ]
+  parent: [ OrganBaseAppendix, ADTOrganResomiInternal ]
   id: ADTOrganResomiAppendix
 
 - type: entity
-  parent: [ OrganBaseEars, OrganSpriteHumanInternal ]
+  parent: [ OrganBaseEars, ADTOrganResomiInternal ]
   id: ADTOrganResomiEars
 
 - type: entity
