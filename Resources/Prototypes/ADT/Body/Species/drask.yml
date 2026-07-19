@@ -39,7 +39,6 @@
   - BaseSpeciesMobOrganic
   id: MobDrask
   name: Urist McDrask
-  abstract: true
   components:
   - type: Sprite
     scale: 1.07, 1.07

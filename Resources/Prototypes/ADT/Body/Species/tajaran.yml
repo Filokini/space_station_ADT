@@ -65,13 +65,11 @@
             state: jumpsuit
 
 - type: entity
-  save: false
   name: Tajaran McHands
   parent:
   - ADTAppearanceTajaran
   - BaseSpeciesMobOrganic
   id: MobTajaran
-  abstract: true
   components:
     - type: MobThresholds
       thresholds:

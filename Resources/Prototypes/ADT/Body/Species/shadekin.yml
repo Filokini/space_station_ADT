@@ -116,12 +116,10 @@
 
 # Shadekin mob (upstream PR#42476). Appearance/body/sprite/inventory come from AppearanceShadekin.
 - type: entity
-  save: false
   parent:
   - ADTAppearanceShadekin
   - ADTBaseSpeciesMobNonBreathing
   id: MobShadekin
-  abstract: true
   name: Урист МакСумеречник
   components:
   - type: OnGhostAttemtpDamage # При суициде будет нормально наносится урон не удушением а кровотечением.

@@ -40,8 +40,7 @@
   parent:
   - ADTAppearanceIPC
   - PlayerSiliconHumanoidBase
-  name: Урист МакПозитроник
-  abstract: true
+  name: urist mcipc
   components:
   - type: VisualBody
   - type: PowerCellSlot

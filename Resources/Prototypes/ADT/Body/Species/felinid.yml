@@ -30,13 +30,11 @@
       Kidneys: OrganHumanKidneys
 
 - type: entity
-  save: false
   name: Base felinid
   parent:
   - ADTAppearanceFelinid
   - BaseSpeciesMobOrganic
   id: MobFelinid
-  abstract: true
   components:
   - type: Hunger
     baseDecayRate: 0.024

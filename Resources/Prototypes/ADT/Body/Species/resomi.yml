@@ -109,13 +109,11 @@
 
 # Resomi mob (upstream PR#42476). Appearance/body/sprite/hands/inventory come from AppearanceResomi.
 - type: entity
-  save: false
   name: Urist McRaptor
   parent:
   - ADTAppearanceResomi
   - BaseSpeciesMobOrganic
   id: MobResomi
-  abstract: true
   components:
   - type: Tag
     tags:
