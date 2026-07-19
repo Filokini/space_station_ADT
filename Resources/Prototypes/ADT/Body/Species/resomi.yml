@@ -114,7 +114,7 @@
   parent:
   - ADTAppearanceResomi
   - BaseSpeciesMobOrganic
-  id: BaseMobResomi
+  id: MobResomi
   abstract: true
   components:
   - type: Tag

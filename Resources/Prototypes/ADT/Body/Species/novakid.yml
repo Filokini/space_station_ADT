@@ -45,7 +45,7 @@
   parent:
   - ADTAppearanceNovakid
   - BaseSpeciesMobOrganic
-  id: BaseMobNovakid
+  id: MobNovakid
   abstract: true
   components:
   - type: Hunger

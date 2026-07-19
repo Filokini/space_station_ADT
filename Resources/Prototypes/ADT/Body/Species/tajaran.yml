@@ -70,7 +70,7 @@
   parent:
   - ADTAppearanceTajaran
   - BaseSpeciesMobOrganic
-  id: BaseMobTajaran
+  id: MobTajaran
   abstract: true
   components:
     - type: MobThresholds

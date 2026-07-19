@@ -120,7 +120,7 @@
   parent:
   - ADTAppearanceShadekin
   - ADTBaseSpeciesMobNonBreathing
-  id: BaseMobShadekin
+  id: MobShadekin
   abstract: true
   name: Урист МакСумеречник
   components:

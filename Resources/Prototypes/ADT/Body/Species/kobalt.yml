@@ -19,7 +19,7 @@
   parent:
   - MobReptilian
   - ADTAppearanceKobolt
-  id: BaseMobKobolt
+  id: MobKobolt
   abstract: true
   components:
   - type: MobThresholds

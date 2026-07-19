@@ -45,7 +45,7 @@
   parent:
   - AppearanceDemon
   - BaseSpeciesMobOrganic
-  id: BaseMobDemon
+  id: MobDemon
   abstract: true
   components:
   - type: Wagging
