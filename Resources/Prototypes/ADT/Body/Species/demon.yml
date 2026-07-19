@@ -46,7 +46,7 @@
   parent:
   - ADTAppearanceDemon
   - BaseSpeciesMobOrganic
-  id: BaseMobDemon
+  id: MobDemon
   components:
   - type: Wagging
   - type: Speech

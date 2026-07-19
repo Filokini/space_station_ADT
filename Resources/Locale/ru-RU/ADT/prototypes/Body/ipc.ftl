@@ -60,3 +60,4 @@ ent-ADTOrganIPCPump = микронасос
 ent-ADTOrganIPCEars = звуковые рецепторы
     .desc = Часть КПБ, отвечающая за восприятие звуков.
     .suffix = { ent-ADTOrganIPCInternal.suffix }
+ipc-board-name = системный блок КПБ
