@@ -1,33 +1,25 @@
 - type: entity
-  abstract: true
+  save: false
   parent:
   - MobBloodstream
+  - MobRespirator
   - MobAtmosStandard
   - MobFlammable
-  - BaseSpeciesMob
-  id: ADTBaseSpeciesMobNonBreathing
-  save: false
+  # ADT-Tweak: BaseMobSpecies removed by wizden Nubody (#42419); base moved to BaseSpeciesMobOrganic
+  - BaseSpeciesMobOrganic
+  id: ADTBaseMobSpeciesOrganicUnRotting
+  abstract: true
   components:
-  - type: MobState
+  - type: UnRotting # ADT-Tweak
+  - type: MobState # ADT-Tweak
   - type: OfferItem
-  - type: RadiationPopup
   - type: PickupHumans
-  - type: Hunger
-  - type: Thirst
+  - type: RadiationPopup
   - type: Barotrauma
     damage:
       types:
-        Blunt: 0.50
+        Blunt: 0.50 #per second, scales with pressure and other constants.
         Heat: 0.1
-  - type: PassiveDamage
-    allowedStates:
-    - Alive
-    damage:
-      types:
-        Heat: -0.07
-        Blunt: -0.05
-        Piercing: -0.05
-        Slash: -0.05
   - type: Fingerprint
   - type: Blindable
   - type: Temperature
@@ -44,9 +36,9 @@
         Heat: 1.5 #per second, scales with temperature & other constants
   - type: TemperatureSpeed
     thresholds:
-      293: 0.9
-      260: 0.6 # ADT tweak
-      230: 0.4 # ADT tweak
+      293: 0.8
+      260: 0.6
+      230: 0.4
   - type: ThermalRegulator
     metabolismHeat: 800
     radiatedHeat: 100
@@ -55,15 +47,20 @@
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 2
-  - type: Perishable
   - type: Butcherable
-    butcheringType: Spike
+    butcheringType: Spike # TODO human.
     spawned:
-    - id: FoodMeat
-      amount: 5
+      - id: FoodMeat
+        amount: 5
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
-  - type: StunVisuals
   - type: BloodCough
     postingSayDamage: blood-cough
   - type: TimeDespawnDamage
