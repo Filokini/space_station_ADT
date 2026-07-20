@@ -33,7 +33,7 @@
 
 - type: entity
   parent:
-  - AppearanceDrask
+  - ADTAppearanceDrask
   - BaseSpeciesMobOrganic
   id: BaseMobDrask
   name: Urist McDrask
