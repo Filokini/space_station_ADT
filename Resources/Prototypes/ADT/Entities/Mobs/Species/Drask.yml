@@ -102,7 +102,7 @@
     damage:
       types:
         Heat: -0.04
-        Сold: -0.1
+        Cold: -0.1
         Blunt: -0.06
         Slash: -0.06
         Piercing: -0.06
