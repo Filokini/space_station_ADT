@@ -89,7 +89,7 @@
   - type: Barotrauma
     damage:
       types:
-        Blunt: 0.8
+        Blunt: 1.2
   - type: PointLight
     color: "#10207b"
     energy: 1
@@ -103,9 +103,9 @@
       types:
         Heat: -0.04
         Cold: -0.1
-        Blunt: -0.06
-        Slash: -0.06
-        Piercing: -0.06
+        Blunt: -0.03
+        Slash: -0.03
+        Piercing: -0.03
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -140,13 +140,13 @@
     coldDamageThreshold: 243.15 # -30C - порог когда активируется coldDamage с лечением.
     coldDamage: #per second, scales with temperature & other constants
       types:
-        Blunt: -0.25
-        Slash: -0.25
-        Piercing: -0.25
+        Blunt: -0.2
+        Slash: -0.1
+        Piercing: -0.1
         Heat: -0.1
-        Shock: -0.25
-        Caustic: -0.15
-        Radiation: -0.2
+        Shock: -0.05
+        Caustic: -0.05
+        Radiation: -0.1
         Poison: -0.1
         Cellular: -0.05
     heatDamage: #per second, scales with temperature & other constants
