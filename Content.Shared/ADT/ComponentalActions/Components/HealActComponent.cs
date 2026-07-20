@@ -8,7 +8,7 @@ namespace Content.Shared.ComponentalActions.Components;
 public sealed partial class HealActComponent : Component
 {
     [DataField("healSound")]
-    public SoundSpecifier HealSound = new SoundPathSpecifier("/Audio/ADT/Blob/blobattack.ogg");
+    public SoundSpecifier HealSound = new SoundPathSpecifier("/Audio/Effects/blobattack.ogg");
 
     /// <summary>
     /// Volume control for the spell.

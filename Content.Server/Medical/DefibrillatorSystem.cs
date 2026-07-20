@@ -19,6 +19,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Content.Shared.ADT.Atmos.Miasma;
+using Content.Shared.Changeling.Components;
 using Robust.Server.Containers;
 using System.Linq;
 using Content.Server.Resist; //ADT-Medicine

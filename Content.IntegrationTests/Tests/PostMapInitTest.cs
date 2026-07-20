@@ -58,8 +58,7 @@ namespace Content.IntegrationTests.Tests
             "ADT_Barratry",
             "ADT_Delta",
             "ADT_Bagel",
-            "ADT_Gemini",
-            "ADT_Kerberos"
+            "ADT_Gemini"
         };
         // ADT-Tweak end
 

@@ -5,7 +5,6 @@ using Content.Server.Popups;
 using Content.Shared.ADT.Salvage.Components;
 using Content.Shared.ADT.Silicon;
 using Content.Shared.Body.Components;
-using Content.Shared.Chemistry.Components;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.Damage.Systems;
@@ -98,7 +97,7 @@ public sealed class CursedHeartSystem : EntitySystem
     {
         if (args.Handled)
             return;
-        if (comp.IsStopped || _mobState.IsDead(uid))
+        if (comp.IsStopped)
             return;
         args.Handled = true;
         _audio.PlayGlobal(new SoundPathSpecifier("/Audio/ADT/Heretic/heartbeat.ogg"), uid);
@@ -111,8 +110,6 @@ public sealed class CursedHeartSystem : EntitySystem
     private void OnToggle(EntityUid uid, CursedHeartComponent comp, ToggleHeartActionEvent args)
     {
         if (args.Handled)
-            return;
-        if (_mobState.IsDead(uid))
             return;
         args.Handled = true;
 
@@ -165,7 +162,7 @@ public sealed class CursedHeartSystem : EntitySystem
             return;
         }
         _bloodstream.TryModifyBloodLevel(args.User, -999);
-        _bloodstream.ChangeBloodReagents(args.User, new Solution("ADTCursedBlood", 200));
+        _bloodstream.ChangeBloodReagent(args.User, "ADTCursedBlood");
         _bloodstream.TryModifyBloodLevel(args.User, 300);
         _popup.PopupEntity(Loc.GetString("popup-cursed-heart-use"), args.User, args.User, PopupType.LargeCaution);
         _damage.TryChangeDamage(args.User, new DamageSpecifier(_proto.Index<DamageTypePrototype>("Piercing"), 20), true, false);

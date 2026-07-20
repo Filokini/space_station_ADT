@@ -953,7 +953,7 @@
         - id: MobAdultSlimesYellowAngry
         - id: MobAngryBee
         - id: MobBearSpace
-        - id: ADTMobXenoRavagerNoGhost #ADT-Tweak
+        - id: MobXenoRavager
         - id: MobTick
         - id: MobSpiderSpace
         - id: MobPurpleSnake

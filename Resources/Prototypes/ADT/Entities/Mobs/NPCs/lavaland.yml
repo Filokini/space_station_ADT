@@ -205,7 +205,7 @@
 
 - type: entity
   name: Nightmare Spider
-  parent: ADTMobBaseSpiderVentCrawler
+  parent: ADTMobBaseSpider
   id: ADTMobNightmareSpider
   components:
   - type: Sprite
@@ -279,7 +279,7 @@
 
 - type: entity
   name: Shock Spider
-  parent: ADTMobBaseSpiderVentCrawler
+  parent: ADTMobBaseSpider
   id: ADTMobShockSpider
   components:
   - type: Sprite

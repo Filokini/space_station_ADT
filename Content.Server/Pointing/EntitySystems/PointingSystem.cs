@@ -29,7 +29,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.Pointing.EntitySystems
 {
     [UsedImplicitly]
-    internal sealed partial class PointingSystem : SharedPointingSystem
+    internal sealed class PointingSystem : SharedPointingSystem
     {
         [Dependency] private readonly IConfigurationManager _config = default!;
         [Dependency] private readonly IReplayRecordingManager _replay = default!;
@@ -206,11 +206,9 @@ namespace Content.Server.Pointing.EntitySystems
             string viewerMessage;
             string? viewerPointedAtMessage = null;
             var playerName = Identity.Entity(player, EntityManager);
-            EntityUid? iconTarget = null; // ADT-Tweak
 
             if (Exists(pointed))
             {
-                iconTarget = pointed; // ADT-Tweak
                 var pointedName = Identity.Entity(pointed, EntityManager);
 
                 EntityUid? containingInventory = null;
@@ -304,23 +302,10 @@ namespace Content.Server.Pointing.EntitySystems
 
             _pointers[session] = _gameTiming.CurTime;
 
-            OnPointingChatMessage(player, session, viewers, iconTarget, selfMessage, viewerMessage, viewerPointedAtMessage); // ADT-Tweak
-
             SendMessage(player, viewers, pointed, selfMessage, viewerMessage, viewerPointedAtMessage);
 
             return true;
         }
-
-        // ADT-Tweak start
-        partial void OnPointingChatMessage(
-            EntityUid source,
-            ICommonSession sourceSession,
-            IEnumerable<ICommonSession> viewers,
-            EntityUid? iconTarget,
-            string selfMessage,
-            string viewerMessage,
-            string? viewerPointedAtMessage);
-        // ADT-Tweak end
 
         public override void Initialize()
         {

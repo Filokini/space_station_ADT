@@ -4,7 +4,6 @@
   text: "/ServerInfo/Guidebook/Antagonist/Antagonists.xml"
   children:
   - Traitors
-  - Changelings # ADT
   - Heretics
   - Thieves
   - Revolutionaries
@@ -13,7 +12,6 @@
   # - Wizard # ADT-Tweak
   - Zombies
   - Xenoborgs
-  - ADTBlob # ADT-Tweak
   - MinorAntagonists
 
 - type: guideEntry

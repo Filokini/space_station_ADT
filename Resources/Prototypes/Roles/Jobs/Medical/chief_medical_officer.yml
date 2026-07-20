@@ -21,12 +21,6 @@
       inverted: true
       traits:
       - Muted
-    # ADT-Tweak: Start
-    - !type:SpeciesRequirement
-      inverted: true
-      species:
-      - Vox
-    # ADT-Tweak: End
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

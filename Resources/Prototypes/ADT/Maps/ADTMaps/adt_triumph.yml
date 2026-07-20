@@ -75,6 +75,3 @@
             Reporter: [ 2, 2 ]
             # passenger
             Passenger: [ -1, -1 ]
-            # Silicon
-            StationAi: [ 1, 1 ]
-            Borg: [ 2, 4 ]

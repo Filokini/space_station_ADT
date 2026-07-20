@@ -8,16 +8,16 @@
     },
     "states": [
         {
-            "name": "armblade"
-        },
-        {
-            "name": "devour_on"
+            "name": "transform"
         },
         {
             "name": "devour"
         },
         {
-            "name": "transform"
+            "name": "devour_on"
+        },
+        {
+            "name": "armblade"
         }
     ]
 }

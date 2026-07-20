@@ -172,7 +172,6 @@
     allowedModes:
     - AdvancedJetInjectorDynamicMode
     - AdvancedJetInjectorInjectMode
-    movementThreshold: 5 # ADT-Tweak
 
 - type: entity
   parent: SyndiHypo
@@ -555,10 +554,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 40
+        maxVol: 20
         reagents:
         - ReagentId: Saline
-          Quantity: 20
+          Quantity: 10
         - ReagentId: DexalinPlus
           Quantity: 20
     #ADT Tweak Start

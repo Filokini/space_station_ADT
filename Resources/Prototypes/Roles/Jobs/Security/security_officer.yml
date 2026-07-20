@@ -47,11 +47,11 @@
   equipment:
     # eyes: ClothingEyesGlassesSecurity ADT-Tweak
     ears: ClothingHeadsetSecurity
-    pocket1: ADTSecVoucher #ADT-Tweak
+    pocket1: WeaponPistolMk58
   storage:
     back:
     - Flash
-    # - MagazinePistol ADT-Tweak
+    - MagazinePistol
 
 - type: chameleonOutfit
   id: SecurityOfficerChameleonOutfit

@@ -15,6 +15,24 @@
     - CrewTransferScheduler
 
 - type: gamePreset
+  id: Changeling
+  alias:
+    - changeling
+  name: changelings-title
+  minPlayers: 25
+  showInVote: false
+  description: changelings-description
+  rules:
+    - Changeling
+    - BasicRoundstartVariation
+    - SubGamemodesRule
+    - BasicStationEventScheduler
+    - MeteorSwarmScheduler
+    - CrewTransferScheduler
+
+#Облегченная версия предателей
+
+- type: gamePreset
   id: TraitorLight
   alias:
     - traitorlight
@@ -51,19 +69,5 @@
     - BasicRoundstartVariation
     - CrewTransferScheduler #ADT tweak
 
-- type: gamePreset
-  id: Blob
-  alias:
-    - blob
-    - blab
-  name: blob-title
-  description: blob-description
-  showInVote: false
-  rules:
-    - BlobGameMode
-    - BasicStationEventScheduler
-    - MeteorSwarmScheduler
-    - BasicRoundstartVariation
-    - CrewTransferScheduler #ADT tweak
 
 

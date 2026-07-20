@@ -32,20 +32,17 @@ public abstract class BaseTextureTag
         return true;
     }
 
-    protected static bool TryDrawIconEntity(NetEntity netEntity, long spriteSize, long scaleValue, Vector2 offset, [NotNullWhen(true)] out Control? control)
+    protected static bool TryDrawIconEntity(NetEntity netEntity, long spriteSize, [NotNullWhen(true)] out Control? control)
     {
         control = null;
         var spriteView = new StaticSpriteView()
         {
             OverrideDirection = Direction.South,
-            Stretch = StaticSpriteView.StretchMode.None,
-            Offset = offset,
-            SpriteOffset = true,
-            RectClipContent = false,
+            SetSize = new Vector2(spriteSize * 2, spriteSize * 2),
         };
 
         spriteView.SetEntity(netEntity);
-        spriteView.Scale = new Vector2(scaleValue, scaleValue);
+        spriteView.Scale = new Vector2(2, 2);
 
         control = spriteView;
         return true;
