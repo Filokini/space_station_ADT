@@ -223,6 +223,10 @@
         color: "#3C0F24"
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
+  - type: Sprite
+    scale: 0.95, 0.95
+  - type: TypingIndicator
+    proto: alien
   - type: LanguageSpeaker
     languages:
       GalacticCommon: Speak
