@@ -99,6 +99,8 @@
   - type: ActionGrant
     actions:
     - ActionPAIOpenShop
+    - ActionPAIPDA # ADT port pAI modernization
+    - ActionPAIConsole # ADT port pAI modernization
   - type: Store
     categories:
     - PAIAbilities
@@ -141,6 +143,7 @@
       Unsexed: UnisexSilicon
   - type: Tag
     tags:
+    - CanPilot
     - SiliconEmotes
   # ADT-Tweak-start
   - type: LanguageSpeaker
@@ -150,6 +153,7 @@
       SiliconCollectiveMind: Speak
   - type: CollectiveMindRank
     rankName: collective-mind-pai-rank
+  - type: ContentEye
   # ADT-Tweak-end
 
 

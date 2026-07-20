@@ -92,6 +92,14 @@
         whitelist:
           tags:
           - Bottle
+      # ADT port start pAI modernization
+      pai_slot:
+        name: Personal AI Device
+        ejectOnInteract: false
+        whitelist:
+          components:
+          - PAI
+      # ADT port end pAI modernization
   - type: SolutionContainerManager
     solutions:
       buffer: {}
