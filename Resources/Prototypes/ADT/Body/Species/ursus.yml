@@ -31,8 +31,6 @@
       Kidneys: ADTOrganUrsusKidneys
   - type: HumanoidProfile
     species: UrsusSpecies
-  - type: ScaleVisuals
-    scale: 1.03, 1.03
   - type: Inventory
     speciesId: urs
     femaleDisplacements:
