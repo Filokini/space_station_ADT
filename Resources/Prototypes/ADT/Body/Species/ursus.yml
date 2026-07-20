@@ -47,7 +47,6 @@
   - BaseSpeciesMobOrganic
   id: MobUrsus
   name: Urist McUrsus
-  abstract: true
   components:
   - type: NpcFactionMember
     factions:
