@@ -235,7 +235,7 @@ public abstract partial class SharedStunSystem : EntitySystem
     /// <param name="autoStand">Whether we want to automatically stand when knockdown ends.</param>
     /// <param name="drop">Whether we should drop items.</param>
     /// <param name="force">Should we force the status effect?</param>
-    public bool TryKnockdown(Entity<CrawlerComponent?> entity, TimeSpan? time, bool refresh = true, bool autoStand = true, bool drop = false, bool force = false) // ADT tweak drop true > false
+    public bool TryKnockdown(Entity<CrawlerComponent?> entity, TimeSpan? time, bool refresh = true, bool autoStand = true, bool drop = true, bool force = false)
     {
         if (!CanKnockdown(entity.Owner, ref time, ref autoStand, ref drop, force))
             return false;

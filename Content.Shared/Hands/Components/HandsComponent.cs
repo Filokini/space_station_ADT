@@ -40,7 +40,7 @@ public sealed partial class HandsComponent : Component
     ///     If true, the items in the hands won't be affected by explosions.
     /// </summary>
     [DataField]
-    public bool DisableExplosionRecursion = true; // ADT tweak added "= true"
+    public bool DisableExplosionRecursion;
 
     /// <summary>
     ///     Modifies the speed at which items are thrown.
