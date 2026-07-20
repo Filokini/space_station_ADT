@@ -35,7 +35,7 @@
   parent:
   - ADTAppearanceDrask
   - BaseSpeciesMobOrganic
-  id: BaseMobDrask
+  id: MobDrask
   name: Urist McDrask
   abstract: true
   components:

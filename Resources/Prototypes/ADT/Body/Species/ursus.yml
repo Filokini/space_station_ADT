@@ -45,7 +45,7 @@
   parent:
   - ADTAppearanceUrsus
   - BaseSpeciesMobOrganic
-  id: BaseMobUrsus
+  id: MobUrsus
   name: Urist McUrsus
   abstract: true
   components:
