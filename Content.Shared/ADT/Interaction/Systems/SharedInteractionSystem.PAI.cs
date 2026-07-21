@@ -10,6 +10,6 @@ public abstract partial class SharedInteractionSystem
                _containerSystem.TryGetContainingContainer(actor, out var container) &&
                container != null &&
                container.Owner == target &&
-               container.ID == "pai_slot";
+               (container.ID == "pai_slot" || container.ID == "PDA-pai");
     }
 }
