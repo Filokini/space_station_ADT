@@ -124,7 +124,7 @@
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiCorpsmanPDA
     belt: ClothingBeltMilitaryWebbingMedFilled
-    pocket1: ADTSyndicateEliteVoucher #ADt-Tweak
+    pocket1: ADTSyndicateMedicVoucher #ADt-Tweak
   storage:
     back:
     - SyndiHypo
