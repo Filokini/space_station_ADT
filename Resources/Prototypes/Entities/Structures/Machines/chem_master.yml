@@ -79,7 +79,7 @@
     containers:
       beakerSlot: !type:ContainerSlot
       outputSlot: !type:ContainerSlot
-      pai_slot: !type:ContainerSlot {}
+      pai_slot: !type:ContainerSlot {} #ADT-Tweak: PAI
       machine_board: !type:Container
       machine_parts: !type:Container
   - type: ItemSlots

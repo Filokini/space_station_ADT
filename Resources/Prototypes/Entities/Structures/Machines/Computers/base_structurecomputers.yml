@@ -95,7 +95,7 @@
     containers:
       board: !type:Container
         ents: []
-      pai_slot: !type:ContainerSlot {}
+      pai_slot: !type:ContainerSlot {} #ADT-Tweak: PAI
   - type: LightningTarget
     priority: 1
   - type: RequireProjectileTarget

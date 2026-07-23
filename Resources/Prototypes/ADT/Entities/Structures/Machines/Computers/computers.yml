@@ -373,4 +373,4 @@
       board: !type:Container
       SeedSlotId: !type:ContainerSlot
       DnaDiskSlotId: !type:ContainerSlot
-      pai_slot: !type:ContainerSlot {} # ADT port pAI modernization
+      pai_slot: !type:ContainerSlot {}

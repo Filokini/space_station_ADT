@@ -85,10 +85,10 @@
     stopSearchVerbPopup: pai-system-stopped-searching
   - type: Examiner
   - type: IntrinsicRadioTransmitter # ADT port pai keys
-    channels: []
+    channels: [] #ADT-Tweak: PAI
   - type: IntrinsicRadioReceiver
   - type: ActiveRadio
-    channels: []
+    channels: [] #ADT-Tweak: PAI
   # ADT port pai radio end
   - type: ContainerContainer
     containers:
