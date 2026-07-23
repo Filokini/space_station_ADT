@@ -266,7 +266,7 @@
 
   - [bold]Проход в ноги[/bold] — [tex path="/Textures/ADT/Interface/Misc/intents_big.rsi" state="grab" scale="1"] [tex path="/Textures/ADT/Interface/Misc/intents_big.rsi" state="disarm" scale="1"]
   <Box>
-  Роняет человека на пол, оглушая на [color=Orange]1 секунду[/color], нанося [color=Red]5[/color] Blunt-урона и НЕ выбивая вещи из рук.
+  Роняет человека на пол, не давая встать [color=Orange]3 секунды[/color], нанося [color=Red]5[/color] Blunt-урона и НЕ выбивая вещи из рук.
   </Box>
 
   - [bold]Боевой захват[/bold] — [tex path="/Textures/ADT/Interface/Misc/intents_big.rsi" state="disarm" scale="1"] [tex path="/Textures/ADT/Interface/Misc/intents_big.rsi" state="disarm" scale="1"] [tex path="/Textures/ADT/Interface/Misc/intents_big.rsi" state="grab" scale="1"]
