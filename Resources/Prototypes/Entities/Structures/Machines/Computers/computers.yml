@@ -167,6 +167,7 @@
       board: !type:Container
         ents: []
       disk_slot: !type:ContainerSlot {}
+      pai_slot: !type:ContainerSlot {}
   - type: GuideHelp
     guides:
     - ShuttleCraft
@@ -654,6 +655,7 @@
       board: !type:Container
       IdCardConsole-privilegedId: !type:ContainerSlot
       IdCardConsole-targetId: !type:ContainerSlot
+      pai_slot: !type:ContainerSlot {} # ADT port pAI modernization
 
 - type: entity
   parent: BaseComputerAiAccess
